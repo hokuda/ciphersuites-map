@@ -1,0 +1,380 @@
+#!/usr/bin/python3
+
+"""
+Print ciphersuites map of IANA, OpenSSL, JSSE in JSON
+
+Auther: Hisanobu Okuda
+"""
+
+import urllib.request
+import io
+import os
+import sys
+import csv
+import subprocess
+import json
+import argparse
+import textwrap
+import itertools
+from py4j.java_gateway import (
+    JavaGateway, CallbackServerParameters, GatewayParameters,
+    launch_gateway)
+
+
+URL = 'https://www.iana.org/assignments/tls-parameters/tls-parameters-4.csv'
+
+
+def get_iana_ciphersuites_idmap():
+    """
+    Download tls-parameters-4.csv from www.iana.org, and make it python dictionary
+    ex)
+    [
+      {
+        "0x00,0x00": {"name": "TLS_NULL_WITH_NULL_NULL", "dtls-ok": "Y", "ref": "N"}
+      },
+      ...
+
+    >>> get_iana_ciphersuites_idmap()["0x00,0x00"]['name']
+    'TLS_NULL_WITH_NULL_NULL'
+    """
+    idmap = {}
+    #response = requests.get(URL)
+    #csvdata = io.StringIO(response.text)
+    csvdata = None
+    req = urllib.request.Request(URL)
+    body = None
+    with urllib.request.urlopen(req) as res:
+        body = res.read().decode("utf-8")
+    csvreader = csv.reader(io.StringIO(body))
+    csvreader.__next__() # skip header
+    for row in csvreader:
+        id = row[0]
+        idmap[id] = {'name':'_'.join(row[1].replace('\n', ' ').split()), 'dtls-ok':row[2], 'ref':row[3]}
+    return idmap
+
+def get_openssl_ciphersuites_idmap():
+    """
+    Run openssl and convert the output to python dictionary
+    ex)
+    [
+      {
+        "0x00,0x01": {"name": "NULL-MD5", "prot": "SSLv3", "kx": "RSA", "au": "RSA", "enc": "None", "mac": "MD5"}
+      },
+      ...
+
+    >>> get_openssl_ciphersuites_idmap()["0x00,0x01"]['name']
+    'NULL-MD5'
+    """
+    idmap = {}
+    command = 'openssl ciphers -V ALL:COMPLEMENTOFALL'
+    proc = subprocess.Popen(command.split(), stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    out, err = proc.communicate()
+    lines = str(out, encoding='utf-8').split('\n')
+    for line in lines:
+        line = line.strip()
+        fields = line.split()
+        if fields:
+            idmap[fields[0]] = {
+                'name':fields[2],
+                'prot':fields[3],
+                'kx':fields[4].replace('Kx=', ''),
+                'au':fields[5].replace('Au=', ''),
+                'enc':fields[6].replace('Enc=', ''),
+                'mac':fields[7].replace('Mac=', '')}
+    return idmap
+
+
+def protocol_id_to_name(gateway, protocol_id):
+    clazz = gateway.jvm.Class.forName("sun.security.ssl.ProtocolVersion")
+
+    int_class = gateway.jvm.int
+    #method = clazz.getDeclaredMethod("valueOf", int_class)
+    #method.setAccessible(true)
+    for m in clazz.getDeclaredMethods():
+        if not m.getName() == "valueOf":
+            continue
+        for t in m.getParameterTypes():
+            print("t={}".format(t))
+            print("t.getName()={}".format(t.getName()))
+        method = m
+    ### this does not work, because py4j converts python int to
+    ### java java.lang.Integer, not java int (primitive)
+    protocol_version = method.invoke(None, protocol_id)
+    return protocol_version.toString()
+
+
+def protocol_id_to_name(gateway, protocol_id):
+    """
+    This is a kludgy version of protocol_id_to_name to convert protocol id to
+    protocol name. Ideally, This should use ProtocolVersion with Java reflection
+    """
+    if protocol_id == 0:
+        return "NONE"
+    elif protocol_id == 0x0002:
+        return "SSLv2Hello"
+    elif protocol_id == 0x0300:
+        return "SSLv3"
+    elif protocol_id == 0x0301:
+        return "TLSv1"
+    elif protocol_id == 0x0302:
+        return "TLSv1.1"
+    elif protocol_id == 0x0303:
+        return "TLSv1.2"
+    elif protocol_id == 0xffff: #The limit of maximum protocol version
+        return "NEVER"
+    else:
+        pass
+    return "UNKNOWN"
+
+
+def dictionaryize_ciphersuite(gateway, javaobj):
+    """
+    convert java CipherSuite object to python dictionary
+    exposing private fields of java CipherSuite object:
+    - name
+    - exportable
+    - priority
+
+    the following fields are not used, because they are not primary to
+    determine if the ciphersuite is supported/enabled:
+    - allowed
+    - obsoleted
+    - supported
+
+    >>> from py4j.java_gateway import JavaGateway, CallbackServerParameters, GatewayParameters, launch_gateway
+    >>> port = launch_gateway(die_on_exit=True)
+    >>> gateway = JavaGateway(gateway_parameters=GatewayParameters(port=port))
+    >>> java_idmap = expose_java_object_field(gateway, None, "sun.security.ssl.CipherSuite", "idMap")
+    >>> javaobj = java_idmap[0x0000]
+    >>> dictionaryize_ciphersuite(gateway, javaobj)
+    {'name': 'SSL_NULL_WITH_NULL_NULL', 'exportable': True, 'priority': 1}
+    >>> gateway.close()
+    """
+    classname = "sun.security.ssl.CipherSuite"
+    return {
+        'name'      : expose_java_object_field(gateway, javaobj, classname, "name"),
+        'exportable': expose_java_object_field(gateway, javaobj, classname, "exportable"),
+        'priority'  : expose_java_object_field(gateway, javaobj, classname, "priority"),
+    }
+
+
+def expose_java_object_field(gateway, javaobj, classname, fieldname):
+    """
+    expose a field in javaobj using java reflection,
+    and return the field object.
+
+    >>> from py4j.java_gateway import JavaGateway, CallbackServerParameters, GatewayParameters, launch_gateway
+    >>> port = launch_gateway(die_on_exit=True)
+    >>> gateway = JavaGateway(gateway_parameters=GatewayParameters(port=port))
+    >>> java_idmap = expose_java_object_field(gateway, None, "sun.security.ssl.CipherSuite", "idMap")
+    >>> java_idmap.getClass().getName()
+    'java.util.HashMap'
+    >>> gateway.close()
+    """
+    clazz = gateway.jvm.Class.forName(classname)
+    field = clazz.getDeclaredField(fieldname)
+    field.setAccessible(True)
+    return field.get(javaobj)
+
+
+def get_jsse_ciphersuites_idmap(java_path):
+    """
+    Run java via py4j and convert sun.security.ssl.CipherSuite#idMap to python dictionary
+    ex)
+    [
+      {
+        "0x00,0x00": {
+          "name": "SSL_NULL_WITH_NULL_NULL",
+          "exportable": true,
+          "priority": 1,
+          "default": false,
+          "supported": false}
+      },
+      ...
+
+    >>> get_jsse_ciphersuites_idmap()["0x00,0x00"]['name']
+    'SSL_NULL_WITH_NULL_NULL'
+    """
+    # the code to initiate gateway is from:
+    # https://www.py4j.org/advanced_topics.html#using-py4j-without-pre-determined-ports-dynamic-port-number
+    port = launch_gateway(die_on_exit=True, java_path=java_path)
+    gateway = JavaGateway(
+        gateway_parameters=GatewayParameters(port=port,auto_field=True),
+        callback_server_parameters=CallbackServerParameters(port=0)
+    )
+    # retrieve the port on which the python callback server was bound to.
+    python_port = gateway.get_callback_server().get_listening_port()
+
+    # tell the Java side to connect to the python callback server with the new
+    # python port. Note that we use the java_gateway_server attribute that
+    # retrieves the GatewayServer instance.
+    gateway.java_gateway_server.resetCallbackClient(
+        gateway.java_gateway_server.getCallbackClient().getAddress(),
+        python_port)
+
+    default_sslsocketfactory = gateway.jvm.javax.net.ssl.SSLSocketFactory.getDefault()
+    default_ciphersuites = default_sslsocketfactory.getDefaultCipherSuites()
+    supported_ciphersuites = default_sslsocketfactory.getSupportedCipherSuites()
+
+    java_idmap = expose_java_object_field(
+        gateway,
+        None, # javaobj=None when obtaining a static field
+        "sun.security.ssl.CipherSuite", "idMap"
+    )
+    
+    idmap = {}
+    for high, low in itertools.product(range(0xff+1), repeat=2):
+        java_cipher_suite = java_idmap[high * 0x100 + low]
+        if java_cipher_suite == None:
+            continue
+        ciphersuite = dictionaryize_ciphersuite(gateway, java_cipher_suite)
+
+        # default==true, if it is one of the default ciphersuites of the default java SSLSocketFactory
+        ciphersuite['default'] = ciphersuite['name'] in default_ciphersuites
+        
+        # supported==true, if it is one of the supported ciphersuites of the default java SSLSocketFactory
+        ciphersuite['supported'] = ciphersuite['name'] in supported_ciphersuites
+        
+        id = "0x{:0=2X},0x{:0=2X}".format(high, low)
+        idmap[id] = ciphersuite
+
+    gateway.close()
+    return idmap
+
+    
+def outer_join(iana, openssl, jsse):
+    ids = set(list(openssl.keys()) + list(iana.keys()) + list(jsse.keys()))
+    return [{'id':id, 'iana':iana.get(id), 'openssl':openssl.get(id), 'jsse':jsse.get(id)} for id in sorted(ids)]
+
+
+def inner_join(openssl, iana):
+    values = set(list(openssl.keys()))
+    return [{'value':value, 'openssl':openssl.get(value), 'iana':iana.get(value)} for value in sorted(values)]
+
+
+def json_print(joined):
+    print(json.dumps(joined))
+
+
+def csv_print(joined, verbose):
+    #writer = csv.writer(sys.stdout, quoting=csv.QUOTE_ALL)
+    writer = csv.writer(sys.stdout)
+    columns = ['Value', 'OpenSSL' , 'IANA']
+    if verbose:
+        columns = columns + ['Prot','Kx','Au','Enc','Mac','dtls-ok','ref']
+    writer.writerow(columns)
+    for row in joined:
+        openssl= row.get('openssl')
+        iana = row.get('iana')
+        values = [
+            row['value'].replace('"','').replace(',',' '),
+            openssl.get('name'),
+            iana.get('name')
+        ]
+        if verbose:
+            values = values + [
+                openssl.get('prot'),
+                openssl.get('kx'),
+                openssl.get('au'),
+                openssl.get('enc'),
+                openssl.get('mac'),
+                iana.get('dtls-ok'),
+                iana.get('ref').replace(',', '/')
+            ]
+        writer.writerow(values)
+
+
+def parse_opts():
+    def _exists(path):
+        if not os.path.exists(path):
+            raise argparse.ArgumentTypeError("{0} does not exist".format(path))
+
+    def _is_file(path):
+        if not os.path.isfile(path):
+            raise argparse.ArgumentTypeError("{0} is not a file".format(path))
+
+    def _is_readable(path):
+        if not os.access(path, os.R_OK):
+            raise argparse.ArgumentTypeError("{0} is not readable".format(path))
+
+    def _is_executable(path):
+        if not os.access(path, os.X_OK):
+            raise argparse.ArgumentTypeError("{0} is not executable".format(path))
+
+    def _is_java(path):
+        with subprocess.Popen([path, "-version"], stdout = subprocess.PIPE, stderr = subprocess.PIPE) as proc:
+            out, err = proc.communicate(timeout=3)
+            str_err = str(err)
+            if 'java ' in str_err: # Oracle JDK
+                return
+            if 'openjdk' in str_err: # OpenJDK
+                return
+        raise argparse.ArgumentTypeError("{0} is not java".format(path))
+
+    def _verify_java(path):
+        """
+        check if path is a path to a valid java command
+        """
+        _exists(path)
+        _is_file(path)
+        _is_readable(path)
+        _is_executable(path)
+        _is_java(path)
+        return path
+
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        description="""\
+Show ciphersuites mapping of IANA and OpenSSL and JSSE merging
+https://www.iana.org/assignments/tls-parameters/tls-parameters-4.csv
+and `openssl ciphers -V ALL:COMPLEMENTOFALL`
+and Java internal class sun.security.ssl.CipherSuite#idMap""",
+        epilog="""\
+Example1: {} | jq -C . | less -S
+Example2: {} | jq hoasdfasd | less -S
+""".format(sys.argv[0], sys.argv[0])
+    )
+    
+    #exclusive = parser.add_mutually_exclusive_group()
+    #exclusive.add_argument('-u', '--union', action='store_true',
+    #help='show union of openssl and IANA (default)')
+    #exclusive.add_argument('-i', '--intersection', action='store_true',
+    #help='show intersection of openssl and IANA')
+    # exclusive output options
+    #exclusive = parser.add_mutually_exclusive_group()
+    #exclusive.add_argument('--csv', action='store_true',
+    #help='print in csv (default)')
+    #exclusive.add_argument('--json', action='store_true',
+    #help='print in json')
+    #parser.add_argument('-v', '--verbose', action='store_true',
+    #help='verbose')
+    parser.add_argument(
+        '-j',
+        '--java',
+        action='store',
+        help="path to `java` command",
+        type=_verify_java,
+    )
+    opts = parser.parse_args()
+    return opts
+
+
+if __name__ == '__main__':
+    if __file__ == "./test":
+        import doctest
+        doctest.testmod(verbose=True)
+        sys.exit(0)
+    opts = parse_opts()
+    #do_join = inner_join if opts.intersection else outer_join
+    do_join = outer_join
+    #do_print = csv_print
+    #do_print = json_print if opts.json else do_print
+    do_print = json_print
+
+    iana = get_iana_ciphersuites_idmap()
+    #sys.exit()
+    openssl = get_openssl_ciphersuites_idmap()
+    jsse = get_jsse_ciphersuites_idmap(opts.java)
+    
+    joined = do_join(iana, openssl, jsse)
+    do_print(joined)
