@@ -9,3 +9,28 @@
 * filter with exact match
 
         ciphersuites-map | jq -C '.[] | select(.iana.name == "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256") | {'iana':.iana.name,'openssl': .openssl.name}'
+
+* script to map cipherscan output
+
+      #!/bin/bash
+      
+      MAP=$(mktemp)
+      SCAN=$(mktemp)
+      
+      HOST=$1
+      PORT=${2:-443}
+      
+      cipherscan ${HOST}:${PORT} | tee $SCAN
+      ciphersuites-map > $MAP
+      
+      OPENSSL_NAMES=`awk '/prio/,/^$/' < $SCAN | grep '[0-9].*' | awk '{print $2}'`
+      
+      echo
+      
+      for name in $OPENSSL_NAMES
+      do
+          cat $MAP | jq -r -C ".[]
+                            | select(.openssl.name == \"${name}\")
+                            | [.iana.name, .openssl.name]
+                            | @csv"
+      done | sed s/\"//g | column -s ',' -t | cat -n
