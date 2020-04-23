@@ -34,3 +34,7 @@
                             | [.iana.name, .openssl.name]
                             | @csv"
       done | sed s/\"//g | column -s ',' -t | cat -n
+
+* regex
+
+      ciphersuites-map | jq -C '.[] | select(.iana.name != null) | select(.iana.name | test("(TLS_.*DHE_RSA_WITH_AES_.*_GCM_SHA.*)")) | .openssl.name'
