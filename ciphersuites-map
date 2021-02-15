@@ -133,7 +133,6 @@ def dictionaryize_ciphersuite(gateway, javaobj):
     exposing private fields of java CipherSuite object:
     - name
     - exportable
-    - priority
 
     the following fields are not used, because they are not primary to
     determine if the ciphersuite is supported/enabled:
@@ -147,14 +146,13 @@ def dictionaryize_ciphersuite(gateway, javaobj):
     >>> java_idmap = expose_java_object_field(gateway, None, "sun.security.ssl.CipherSuite", "idMap")
     >>> javaobj = java_idmap[0x0000]
     >>> dictionaryize_ciphersuite(gateway, javaobj)
-    {'name': 'SSL_NULL_WITH_NULL_NULL', 'exportable': True, 'priority': 1}
+    {'name': 'SSL_NULL_WITH_NULL_NULL', 'exportable': True}
     >>> gateway.close()
     """
     classname = "sun.security.ssl.CipherSuite"
     return {
         'name'      : expose_java_object_field(gateway, javaobj, classname, "name"),
         'exportable': expose_java_object_field(gateway, javaobj, classname, "exportable"),
-        'priority'  : expose_java_object_field(gateway, javaobj, classname, "priority"),
     }
 
 
@@ -177,6 +175,40 @@ def expose_java_object_field(gateway, javaobj, classname, fieldname):
     return field.get(javaobj)
 
 
+def is_java_1_8_0_272_or_later(gateway):
+    java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
+    if java_version_string.startswith("1.8.0"):
+        java_update_string = java_version_string.split('_')[1]
+        return int(java_update_string) >= 272
+    return False
+
+
+def is_java_11(gateway):
+    java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
+    return java_version_string.startswith("11")
+
+
+def get_java_idmap_272(gateway):
+    java_cs_values = gateway.jvm.sun.security.ssl.CipherSuite.values()
+    class_name = "sun.security.ssl.CipherSuite"
+    attr_name = "id"
+    return {
+        expose_java_object_field(gateway, cs, class_name, attr_name) : cs
+        for cs in java_cs_values
+    }
+
+
+def get_java_idmap(gateway):
+    if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway):
+        return get_java_idmap_272(gateway)
+    else:
+        return expose_java_object_field(
+            gateway,
+            None, # javaobj=None when obtaining a static field
+            "sun.security.ssl.CipherSuite", "idMap"
+        )
+
+
 def get_jsse_ciphersuites_idmap(java_path):
     """
     Run java via py4j and convert sun.security.ssl.CipherSuite#idMap to python dictionary
@@ -186,7 +218,6 @@ def get_jsse_ciphersuites_idmap(java_path):
         "0x00,0x00": {
           "name": "SSL_NULL_WITH_NULL_NULL",
           "exportable": true,
-          "priority": 1,
           "default": false,
           "supported": false}
       },
@@ -216,15 +247,11 @@ def get_jsse_ciphersuites_idmap(java_path):
     default_ciphersuites = default_sslsocketfactory.getDefaultCipherSuites()
     supported_ciphersuites = default_sslsocketfactory.getSupportedCipherSuites()
 
-    java_idmap = expose_java_object_field(
-        gateway,
-        None, # javaobj=None when obtaining a static field
-        "sun.security.ssl.CipherSuite", "idMap"
-    )
+    java_idmap = get_java_idmap(gateway)
     
     idmap = {}
     for high, low in itertools.product(range(0xff+1), repeat=2):
-        java_cipher_suite = java_idmap[high * 0x100 + low]
+        java_cipher_suite = java_idmap.get(high * 0x100 + low)
         if java_cipher_suite == None:
             continue
         ciphersuite = dictionaryize_ciphersuite(gateway, java_cipher_suite)
