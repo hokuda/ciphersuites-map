@@ -175,6 +175,14 @@ def expose_java_object_field(gateway, javaobj, classname, fieldname):
     return field.get(javaobj)
 
 
+def is_java_1_8_0_271_or_earlier(gateway):
+    java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
+    if java_version_string.startswith("1.8.0"):
+        java_update_string = java_version_string.split('_')[1]
+        return int(java_update_string) < 272
+    return False
+
+
 def is_java_1_8_0_272_or_later(gateway):
     java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
     if java_version_string.startswith("1.8.0"):
@@ -186,6 +194,11 @@ def is_java_1_8_0_272_or_later(gateway):
 def is_java_11(gateway):
     java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
     return java_version_string.startswith("11")
+
+
+def is_java_17(gateway):
+    java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
+    return java_version_string.startswith("17")
 
 
 def get_java_idmap_272(gateway):
@@ -201,12 +214,15 @@ def get_java_idmap_272(gateway):
 def get_java_idmap(gateway):
     if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway):
         return get_java_idmap_272(gateway)
-    else:
+    if is_java_1_8_0_271_or_earlier(gateway):
         return expose_java_object_field(
             gateway,
             None, # javaobj=None when obtaining a static field
             "sun.security.ssl.CipherSuite", "idMap"
         )
+    print("unsupported java version: " + gateway.jvm.java.lang.System.getProperty("java.version"))
+    gateway.close()
+    sys.exit(-1)
 
 
 def get_jsse_ciphersuites_idmap(java_path):
