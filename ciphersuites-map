@@ -201,6 +201,16 @@ def is_java_17(gateway):
     return java_version_string.startswith("17")
 
 
+def is_java_17_(java_path):
+    cmd = 'java -version' if (java_path == None) else java_path + ' -version'
+    child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = child.communicate()
+    rt = child.returncode
+    if rt != 0:
+        raise Exception(f"{cmd} returned {rt}. stderr={stderr}")
+    return '"17' in str(stderr)
+
+
 def get_java_idmap_272(gateway):
     java_cs_values = gateway.jvm.sun.security.ssl.CipherSuite.values()
     class_name = "sun.security.ssl.CipherSuite"
@@ -212,7 +222,7 @@ def get_java_idmap_272(gateway):
 
 
 def get_java_idmap(gateway):
-    if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway):
+    if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway) or is_java_17(gateway):
         return get_java_idmap_272(gateway)
     if is_java_1_8_0_271_or_earlier(gateway):
         return expose_java_object_field(
@@ -229,22 +239,22 @@ def get_jsse_ciphersuites_idmap(java_path):
     """
     Run java via py4j and convert sun.security.ssl.CipherSuite#idMap to python dictionary
     ex)
-    [
       {
-        "0x00,0x00": {
-          "name": "SSL_NULL_WITH_NULL_NULL",
-          "exportable": true,
-          "default": false,
-          "supported": false}
-      },
-      ...
+        '0x00,0x00': {'name': 'SSL_NULL_WITH_NULL_NULL', 'exportable': True, 'default': False, 'supported': False},
+        ...,
+        ...
+      }
 
     >>> get_jsse_ciphersuites_idmap()["0x00,0x00"]['name']
     'SSL_NULL_WITH_NULL_NULL'
     """
+
     # the code to initiate gateway is from:
     # https://www.py4j.org/advanced_topics.html#using-py4j-without-pre-determined-ports-dynamic-port-number
-    port = launch_gateway(die_on_exit=True, java_path=java_path)
+    if is_java_17_(java_path):
+        port = launch_gateway(die_on_exit=True, java_path=java_path, javaopts=["--add-exports", "java.base/sun.security.ssl=ALL-UNNAMED", "--add-opens", "java.base/sun.security.ssl=ALL-UNNAMED"])
+    else:
+        port = launch_gateway(die_on_exit=True, java_path=java_path)
     gateway = JavaGateway(
         gateway_parameters=GatewayParameters(port=port,auto_field=True),
         callback_server_parameters=CallbackServerParameters(port=0)
@@ -403,7 +413,7 @@ Example2: {} | jq hoasdfasd | less -S
 
 
 if __name__ == '__main__':
-    if __file__ == "./test":
+    if __file__.endswith("./test"):
         import doctest
         doctest.testmod(verbose=True)
         sys.exit(0)
