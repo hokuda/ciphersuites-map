@@ -252,7 +252,7 @@ def get_jsse_ciphersuites_idmap(java_path):
     # the code to initiate gateway is from:
     # https://www.py4j.org/advanced_topics.html#using-py4j-without-pre-determined-ports-dynamic-port-number
     if is_java_17_(java_path):
-        port = launch_gateway(die_on_exit=True, java_path=java_path, javaopts=["--add-exports", "java.base/sun.security.ssl=ALL-UNNAMED", "--add-opens", "java.base/sun.security.ssl=ALL-UNNAMED"])
+        port = launch_gateway(die_on_exit=True, java_path=java_path, javaopts=["--add-opens", "java.base/sun.security.ssl=ALL-UNNAMED"])
     else:
         port = launch_gateway(die_on_exit=True, java_path=java_path)
     gateway = JavaGateway(
