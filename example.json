@@ -1,0 +1,7311 @@
+[
+  {
+    "id": "0x00,0x00",
+    "iana": {
+      "name": "TLS_NULL_WITH_NULL_NULL",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_NULL_WITH_NULL_NULL",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x01",
+    "iana": {
+      "name": "TLS_RSA_WITH_NULL_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "NULL-MD5",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "MD5"
+    },
+    "jsse": {
+      "name": "SSL_RSA_WITH_NULL_MD5",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x02",
+    "iana": {
+      "name": "TLS_RSA_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "NULL-SHA",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "SSL_RSA_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x03",
+    "iana": {
+      "name": "TLS_RSA_EXPORT_WITH_RC4_40_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_EXPORT_WITH_RC4_40_MD5",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x04",
+    "iana": {
+      "name": "TLS_RSA_WITH_RC4_128_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_WITH_RC4_128_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x05",
+    "iana": {
+      "name": "TLS_RSA_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x06",
+    "iana": {
+      "name": "TLS_RSA_EXPORT_WITH_RC2_CBC_40_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_EXPORT_WITH_RC2_CBC_40_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x07",
+    "iana": {
+      "name": "TLS_RSA_WITH_IDEA_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_WITH_IDEA_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x08",
+    "iana": {
+      "name": "TLS_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x09",
+    "iana": {
+      "name": "TLS_RSA_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0A",
+    "iana": {
+      "name": "TLS_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0B",
+    "iana": {
+      "name": "TLS_DH_DSS_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_DSS_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0C",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_DSS_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0D",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_DSS_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0E",
+    "iana": {
+      "name": "TLS_DH_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x0F",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_RSA_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x10",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x11",
+    "iana": {
+      "name": "TLS_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x12",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x13",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x14",
+    "iana": {
+      "name": "TLS_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_RSA_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x15",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_RSA_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x16",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x17",
+    "iana": {
+      "name": "TLS_DH_anon_EXPORT_WITH_RC4_40_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_anon_EXPORT_WITH_RC4_40_MD5",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x18",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_RC4_128_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_anon_WITH_RC4_128_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x19",
+    "iana": {
+      "name": "TLS_DH_anon_EXPORT_WITH_DES40_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_anon_EXPORT_WITH_DES40_CBC_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1A",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_anon_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1B",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DH_anon_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1C",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_FORTEZZA_DMS_WITH_NULL_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1C-1D",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts_with_SSLv3",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x1D",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_FORTEZZA_DMS_WITH_FORTEZZA_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1E",
+    "iana": {
+      "name": "TLS_KRB5_WITH_DES_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x1F",
+    "iana": {
+      "name": "TLS_KRB5_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x20",
+    "iana": {
+      "name": "TLS_KRB5_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x21",
+    "iana": {
+      "name": "TLS_KRB5_WITH_IDEA_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_IDEA_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x22",
+    "iana": {
+      "name": "TLS_KRB5_WITH_DES_CBC_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_DES_CBC_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x23",
+    "iana": {
+      "name": "TLS_KRB5_WITH_3DES_EDE_CBC_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_3DES_EDE_CBC_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x24",
+    "iana": {
+      "name": "TLS_KRB5_WITH_RC4_128_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_RC4_128_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x25",
+    "iana": {
+      "name": "TLS_KRB5_WITH_IDEA_CBC_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_WITH_IDEA_CBC_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x26",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_DES_CBC_40_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x27",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC2_CBC_40_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC2_CBC_40_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x28",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC4_40_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC4_40_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x29",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_DES_CBC_40_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2A",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC2_CBC_40_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2B",
+    "iana": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC4_40_MD5",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_KRB5_EXPORT_WITH_RC4_40_MD5",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2C",
+    "iana": {
+      "name": "TLS_PSK_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-NULL-SHA",
+      "prot": "SSLv3",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_NULL_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2D",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-NULL-SHA",
+      "prot": "SSLv3",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2E",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-NULL-SHA",
+      "prot": "SSLv3",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x2F",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES128-SHA",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x30",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x31",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x32",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x33",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x34",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x35",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES256-SHA",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x36",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x37",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x38",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x39",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x3A",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x3B",
+    "iana": {
+      "name": "TLS_RSA_WITH_NULL_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "NULL-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_NULL_SHA256",
+      "exportable": true,
+      "default": false,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x3C",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x3D",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x3E",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x3F",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x40",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x41",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "CAMELLIA128-SHA",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x42",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x43",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x44",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-CAMELLIA128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "Camellia(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x45",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-CAMELLIA128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x46",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-CAMELLIA128-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "None",
+      "enc": "Camellia(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x47-4F",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts_with_deployed_implementations",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x50-58",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x59-5C",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts_with_deployed_implementations",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x5D-5F",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x60-66",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts_with_widely_deployed_implementations",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x62",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_EXPORT1024_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x63",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_EXPORT1024_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x64",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_EXPORT1024_WITH_RC4_56_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x65",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_EXPORT1024_WITH_RC4_56_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x66",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_DHE_DSS_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x67",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x68",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x69",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x6A",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AES(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x6B",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x6C",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x6D",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AES(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x6E-83",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0x84",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "CAMELLIA256-SHA",
+      "prot": "SSLv3",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x85",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x86",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x87",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-CAMELLIA256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "Camellia(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x88",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-CAMELLIA256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x89",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-CAMELLIA256-SHA",
+      "prot": "SSLv3",
+      "kx": "DH",
+      "au": "None",
+      "enc": "Camellia(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8A",
+    "iana": {
+      "name": "TLS_PSK_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8B",
+    "iana": {
+      "name": "TLS_PSK_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8C",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8D",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8E",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x8F",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x90",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x91",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x92",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x93",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x94",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x95",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x96",
+    "iana": {
+      "name": "TLS_RSA_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x97",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x98",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x99",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x9A",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x9B",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_SEED_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_SEED_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0x9C",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x9D",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x9E",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0x9F",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x00,0xA0",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA1",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA2",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA3",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA4",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA5",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA6",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA7",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA8",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xA9",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAA",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAB",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAC",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAD",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAE",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES128-CBC-SHA256",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xAF",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES256-CBC-SHA384",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB0",
+    "iana": {
+      "name": "TLS_PSK_WITH_NULL_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-NULL-SHA256",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_NULL_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB1",
+    "iana": {
+      "name": "TLS_PSK_WITH_NULL_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-NULL-SHA384",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_NULL_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB2",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES128-CBC-SHA256",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB3",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES256-CBC-SHA384",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB4",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-NULL-SHA256",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB5",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-NULL-SHA384",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_NULL_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB6",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES128-CBC-SHA256",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB7",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-AES256-CBC-SHA384",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB8",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-NULL-SHA256",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xB9",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-NULL-SHA384",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_NULL_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBA",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBB",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBC",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBD",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBE",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xBF",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC0",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "CAMELLIA256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC1",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC2",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC3",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-CAMELLIA256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "Camellia(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC4",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-CAMELLIA256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC5",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ADH-CAMELLIA256-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "None",
+      "enc": "Camellia(256)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x00,0xC6",
+    "iana": {
+      "name": "TLS_SM4_GCM_SM3",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0xC7",
+    "iana": {
+      "name": "TLS_SM4_CCM_SM3",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0xC8-FE",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x00,0xFF",
+    "iana": {
+      "name": "TLS_EMPTY_RENEGOTIATION_INFO_SCSV",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_EMPTY_RENEGOTIATION_INFO_SCSV",
+      "exportable": true,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x01-09,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x0A,0x00-09",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x0A,0x0A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x0A,0x0B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x0B-12,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x13,0x00",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x13,0x01",
+    "iana": {
+      "name": "TLS_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "TLS_AES_128_GCM_SHA256",
+      "prot": "TLSv1.3",
+      "kx": "any",
+      "au": "any",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x13,0x02",
+    "iana": {
+      "name": "TLS_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "TLS_AES_256_GCM_SHA384",
+      "prot": "TLSv1.3",
+      "kx": "any",
+      "au": "any",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x13,0x03",
+    "iana": {
+      "name": "TLS_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "TLS_CHACHA20_POLY1305_SHA256",
+      "prot": "TLSv1.3",
+      "kx": "any",
+      "au": "any",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_CHACHA20_POLY1305_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0x13,0x04",
+    "iana": {
+      "name": "TLS_AES_128_CCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "TLS_AES_128_CCM_SHA256",
+      "prot": "TLSv1.3",
+      "kx": "any",
+      "au": "any",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_AES_128_CCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x13,0x05",
+    "iana": {
+      "name": "TLS_AES_128_CCM_8_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_AES_128_CCM_8_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x13,0x06",
+    "iana": {
+      "name": "TLS_AEGIS_256_SHA512",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x13,0x07",
+    "iana": {
+      "name": "TLS_AEGIS_128L_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x13,0x08-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x14-19,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x1A,0x00-19",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x1A,0x1A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x1A,0x1B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x1B-29,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x2A,0x00-29",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x2A,0x2A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x2A,0x2B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x2B-39,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x3A,0x00-39",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x3A,0x3A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x3A,0x3B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x3B-49,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x4A,0x00-49",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x4A,0x4A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x4A,0x4B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x4B-55,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x56,0x00",
+    "iana": {
+      "name": "TLS_FALLBACK_SCSV",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_FALLBACK_SCSV",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0x56,0x01-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x57-59,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x5A,0x00-59",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x5A,0x5A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x5A,0x5B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x5B-69,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x6A,0x00-69",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x6A,0x6A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x6A,0x6B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x6B-79,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x7A,0x00-79",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x7A,0x7A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x7A,0x7B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x7B-89,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x8A,0x00-89",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x8A,0x8A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x8A,0x8B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x8B-99,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x9A,0x00-99",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x9A,0x9A",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x9A,0x9B-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0x9B-A9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xAA,0x00-A9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xAA,0xAA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xAA,0xAB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xAB-B9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xBA,0x00-B9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xBA,0xBA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xBA,0xBB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xBB-BF,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0x00",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0x01",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x02",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x03",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x04",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x05",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x06",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-NULL-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x07",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x08",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x09",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES128-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x0A",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES256-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x0B",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x0C",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x0D",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x0E",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x0F",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x10",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-NULL-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x11",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x12",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x13",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES128-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x14",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES256-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x15",
+    "iana": {
+      "name": "TLS_ECDH_anon_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AECDH-NULL-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "None",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDH_anon_WITH_NULL_SHA",
+      "exportable": true,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x16",
+    "iana": {
+      "name": "TLS_ECDH_anon_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_anon_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x17",
+    "iana": {
+      "name": "TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_anon_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x18",
+    "iana": {
+      "name": "TLS_ECDH_anon_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AECDH-AES128-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "None",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDH_anon_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x19",
+    "iana": {
+      "name": "TLS_ECDH_anon_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AECDH-AES256-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDH",
+      "au": "None",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDH_anon_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1A",
+    "iana": {
+      "name": "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_SRP_SHA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1B",
+    "iana": {
+      "name": "TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_SRP_SHA_RSA_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1C",
+    "iana": {
+      "name": "TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_SRP_SHA_DSS_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1D",
+    "iana": {
+      "name": "TLS_SRP_SHA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-AES-128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "SRP",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1E",
+    "iana": {
+      "name": "TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-RSA-AES-128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_RSA_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x1F",
+    "iana": {
+      "name": "TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-DSS-AES-128-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "DSS",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_DSS_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x20",
+    "iana": {
+      "name": "TLS_SRP_SHA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-AES-256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "SRP",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x21",
+    "iana": {
+      "name": "TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-RSA-AES-256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_RSA_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x22",
+    "iana": {
+      "name": "TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "SRP-DSS-AES-256-CBC-SHA",
+      "prot": "SSLv3",
+      "kx": "SRP",
+      "au": "DSS",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_SRP_SHA_DSS_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x23",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x24",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES256-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x25",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x26",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x27",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x28",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES256-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x29",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x2A",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x2B",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x2C",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x2D",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x2E",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x2F",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AESGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x30",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-AES256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "AESGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xC0,0x31",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x32",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x33",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_RC4_128_SHA",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_RC4_128_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x34",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x35",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-AES128-CBC-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x36",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-AES256-CBC-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x37",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-AES128-CBC-SHA256",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "AES(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x38",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-AES256-CBC-SHA384",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "AES(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x39",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-NULL-SHA",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA1"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3A",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-NULL-SHA256",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3B",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-NULL-SHA384",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "None",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_NULL_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3C",
+    "iana": {
+      "name": "TLS_RSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3D",
+    "iana": {
+      "name": "TLS_RSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3E",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x3F",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x40",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x41",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x42",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x43",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x44",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x45",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x46",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x47",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x48",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x49",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4A",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4B",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4C",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4D",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4E",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x4F",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x50",
+    "iana": {
+      "name": "TLS_RSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x51",
+    "iana": {
+      "name": "TLS_RSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x52",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x53",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x54",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x55",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x56",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x57",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-DSS-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "DSS",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x58",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x59",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5A",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5B",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5C",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5D",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5E",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x5F",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x60",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x61",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x62",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x63",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x64",
+    "iana": {
+      "name": "TLS_PSK_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x65",
+    "iana": {
+      "name": "TLS_PSK_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x66",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x67",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x68",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x69",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6A",
+    "iana": {
+      "name": "TLS_PSK_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6B",
+    "iana": {
+      "name": "TLS_PSK_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6C",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6D",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6E",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-ARIA128-GCM-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "ARIAGCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x6F",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-ARIA256-GCM-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "ARIAGCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_ARIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x70",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_ARIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_ARIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x71",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_ARIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_ARIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x72",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x73",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-CAMELLIA256-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x74",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x75",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x76",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-CAMELLIA128-SHA256",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x77",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-CAMELLIA256-SHA384",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x78",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x79",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7A",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7B",
+    "iana": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7C",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7D",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7E",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x7F",
+    "iana": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x80",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x81",
+    "iana": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_DSS_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x82",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x83",
+    "iana": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_DSS_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x84",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x85",
+    "iana": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DH_anon_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x86",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x87",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x88",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x89",
+    "iana": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_ECDSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8A",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8B",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8C",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8D",
+    "iana": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_ECDH_RSA_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8E",
+    "iana": {
+      "name": "TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x8F",
+    "iana": {
+      "name": "TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x90",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x91",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x92",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_128_GCM_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x93",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_256_GCM_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x94",
+    "iana": {
+      "name": "TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-CAMELLIA128-SHA256",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x95",
+    "iana": {
+      "name": "TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-CAMELLIA256-SHA384",
+      "prot": "TLSv1",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x96",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-CAMELLIA128-SHA256",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x97",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-CAMELLIA256-SHA384",
+      "prot": "TLSv1",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x98",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-CAMELLIA128-SHA256",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x99",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-CAMELLIA256-SHA384",
+      "prot": "TLSv1",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_RSA_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9A",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-CAMELLIA128-SHA256",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "Camellia(128)",
+      "mac": "SHA256"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_CAMELLIA_128_CBC_SHA256",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9B",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-CAMELLIA256-SHA384",
+      "prot": "TLSv1",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "Camellia(256)",
+      "mac": "SHA384"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_PSK_WITH_CAMELLIA_256_CBC_SHA384",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9C",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_128_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES128-CCM",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_128_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9D",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_256_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES256-CCM",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESCCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_256_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9E",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CCM",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES128-CCM",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0x9F",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CCM",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES256-CCM",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESCCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA0",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_128_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES128-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESCCM8(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_128_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA1",
+    "iana": {
+      "name": "TLS_RSA_WITH_AES_256_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "AES256-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "RSA",
+      "au": "RSA",
+      "enc": "AESCCM8(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_RSA_WITH_AES_256_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA2",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES128-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESCCM8(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_128_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA3",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CCM_8",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-RSA-AES256-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "AESCCM8(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_AES_256_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA4",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_128_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES128-CCM",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_128_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA5",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_256_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES256-CCM",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESCCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_256_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA6",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CCM",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES128-CCM",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_128_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA7",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CCM",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES256-CCM",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESCCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_PSK_WITH_AES_256_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA8",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_128_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES128-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESCCM8(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_128_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xA9",
+    "iana": {
+      "name": "TLS_PSK_WITH_AES_256_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-AES256-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "AESCCM8(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_WITH_AES_256_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAA",
+    "iana": {
+      "name": "TLS_PSK_DHE_WITH_AES_128_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES128-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESCCM8(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_DHE_WITH_AES_128_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAB",
+    "iana": {
+      "name": "TLS_PSK_DHE_WITH_AES_256_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "DHE-PSK-AES256-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "AESCCM8(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_PSK_DHE_WITH_AES_256_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAC",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES128-CCM",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESCCM(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAD",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CCM",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES256-CCM",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESCCM(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CCM",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAE",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES128-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESCCM8(128)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xAF",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-AES256-CCM8",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "AESCCM8(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_AES_256_CCM_8",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xC0,0xB0",
+    "iana": {
+      "name": "TLS_ECCPWD_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB1",
+    "iana": {
+      "name": "TLS_ECCPWD_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB2",
+    "iana": {
+      "name": "TLS_ECCPWD_WITH_AES_128_CCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB3",
+    "iana": {
+      "name": "TLS_ECCPWD_WITH_AES_256_CCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB4",
+    "iana": {
+      "name": "TLS_SHA256_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB5",
+    "iana": {
+      "name": "TLS_SHA384_SHA384",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC0,0xB6-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x00",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_KUZNYECHIK_CTR_OMAC",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x01",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_MAGMA_CTR_OMAC",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x02",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_28147_CNT_IMIT",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x03",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_L",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x04",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_MAGMA_MGM_L",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x05",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_KUZNYECHIK_MGM_S",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x06",
+    "iana": {
+      "name": "TLS_GOSTR341112_256_WITH_MAGMA_MGM_S",
+      "dtls-ok": "N",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC1,0x07-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xC2-C9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCA,0x00-C9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCA,0xCA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCA,0xCB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCB,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0x00-A7",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0xA8",
+    "iana": {
+      "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-RSA-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "RSA",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xCC,0xA9",
+    "iana": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-ECDSA-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "ECDH",
+      "au": "ECDSA",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xCC,0xAA",
+    "iana": {
+      "name": "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-RSA-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "DH",
+      "au": "RSA",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": {
+      "name": "TLS_DHE_RSA_WITH_CHACHA20_POLY1305_SHA256",
+      "exportable": false,
+      "default": true,
+      "supported": true
+    }
+  },
+  {
+    "id": "0xCC,0xAB",
+    "iana": {
+      "name": "TLS_PSK_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "PSK-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "PSK",
+      "au": "PSK",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0xAC",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "ECDHE-PSK-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "ECDHEPSK",
+      "au": "PSK",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0xAD",
+    "iana": {
+      "name": "TLS_DHE_PSK_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": {
+      "name": "DHE-PSK-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "DHEPSK",
+      "au": "PSK",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0xAE",
+    "iana": {
+      "name": "TLS_RSA_PSK_WITH_CHACHA20_POLY1305_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": {
+      "name": "RSA-PSK-CHACHA20-POLY1305",
+      "prot": "TLSv1.2",
+      "kx": "RSAPSK",
+      "au": "RSA",
+      "enc": "CHACHA20/POLY1305(256)",
+      "mac": "AEAD"
+    },
+    "jsse": null
+  },
+  {
+    "id": "0xCC,0xAF-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xCD-CF,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x00",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x01",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_GCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x02",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_256_GCM_SHA384",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x03",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CCM_8_SHA256",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x04",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x05",
+    "iana": {
+      "name": "TLS_ECDHE_PSK_WITH_AES_128_CCM_SHA256",
+      "dtls-ok": "Y",
+      "ref": "Y"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD0,0x06-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xD1-D9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xDA,0x00-D9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xDA,0xDA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xDA,0xDB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xDB-E9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xEA,0x00-E9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xEA,0xEA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xEA,0xEB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xEB-F9,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFA,0x00-C9",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFA,0xFA",
+    "iana": {
+      "name": "Reserved",
+      "dtls-ok": "Y",
+      "ref": "N"
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFA,0xFB-FF",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFB-FD,*",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFE,0x00-FD",
+    "iana": {
+      "name": "Unassigned",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFE,0xFE",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_FIPS_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xFE,0xFE-FF",
+    "iana": {
+      "name": "Reserved_to_avoid_conflicts_with_widely_deployed_implementations",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFE,0xFF",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "SSL_RSA_FIPS_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xFF,0x00-FF",
+    "iana": {
+      "name": "Reserved_for_Private_Use",
+      "dtls-ok": "",
+      "ref": ""
+    },
+    "openssl": null,
+    "jsse": null
+  },
+  {
+    "id": "0xFF,0xE0",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "NETSCAPE_RSA_FIPS_WITH_3DES_EDE_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  },
+  {
+    "id": "0xFF,0xE1",
+    "iana": null,
+    "openssl": null,
+    "jsse": {
+      "name": "NETSCAPE_RSA_FIPS_WITH_DES_CBC_SHA",
+      "exportable": false,
+      "default": false,
+      "supported": false
+    }
+  }
+]

@@ -201,6 +201,11 @@ def is_java_17(gateway):
     return java_version_string.startswith("17")
 
 
+def is_java_21(gateway):
+    java_version_string = gateway.jvm.java.lang.System.getProperty("java.version")
+    return java_version_string.startswith("21")
+
+
 def is_java_17_(java_path):
     cmd = 'java -version' if (java_path == None) else java_path + ' -version'
     child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -209,6 +214,16 @@ def is_java_17_(java_path):
     if rt != 0:
         raise Exception(f"{cmd} returned {rt}. stderr={stderr}")
     return '"17' in str(stderr)
+
+
+def is_java_21_(java_path):
+    cmd = 'java -version' if (java_path == None) else java_path + ' -version'
+    child = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    stdout, stderr = child.communicate()
+    rt = child.returncode
+    if rt != 0:
+        raise Exception(f"{cmd} returned {rt}. stderr={stderr}")
+    return '"21' in str(stderr)
 
 
 def get_java_idmap_272(gateway):
@@ -222,7 +237,7 @@ def get_java_idmap_272(gateway):
 
 
 def get_java_idmap(gateway):
-    if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway) or is_java_17(gateway):
+    if is_java_1_8_0_272_or_later(gateway) or is_java_11(gateway) or is_java_17(gateway) or is_java_21(gateway):
         return get_java_idmap_272(gateway)
     if is_java_1_8_0_271_or_earlier(gateway):
         return expose_java_object_field(
@@ -251,7 +266,7 @@ def get_jsse_ciphersuites_idmap(java_path):
 
     # the code to initiate gateway is from:
     # https://www.py4j.org/advanced_topics.html#using-py4j-without-pre-determined-ports-dynamic-port-number
-    if is_java_17_(java_path):
+    if is_java_17_(java_path) or is_java_21_(java_path):
         port = launch_gateway(die_on_exit=True, java_path=java_path, javaopts=["--add-opens", "java.base/sun.security.ssl=ALL-UNNAMED"])
     else:
         port = launch_gateway(die_on_exit=True, java_path=java_path)
